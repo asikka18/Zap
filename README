@@ -1,0 +1,71 @@
+/**********************************************************
+* Project 3: Zap
+* CS 15
+* README
+* Name: Armaan Sikka asikka01
+* Date Started: 3/27/24
+*********************************************************/
+
+Compile/run:
+     - Compile using
+            make zap
+     - run executable with
+            ./zap
+
+
+Program Purpose:
+    The purpose of this program is to compress and decompress text files using
+    HuffmanTrees and binary strings.
+
+Acknowledgements:
+    Help from TA, Cameron Yuen.
+
+Compile:
+    make zap
+    ./zap [zap/unzap] InputFile OutputFile
+
+Files: 
+main.cpp:
+    This file contains the main function that processes the command line
+    arguments (ensuring they are valid), and appropriately call either the
+    encoder or decoder function of the HuffmanCoder class.
+
+phaseOne.h:
+    This file contains the function declarations for the phaseOne functions.
+
+phaseOne.cpp:
+    This file contains the function definitions for the phaseOne functions.
+
+HuffmanCoder.h:
+    This file contains the function declarations for the HuffmanCoder class. It
+    mostly has to do with the encoder and decoder functions that mainly control
+    the program.
+
+HuffmanCoder.cpp:
+    This file contains the function defintions for the HuffmanCoder class.
+
+BinaryIO.h:
+    This file contains the function declarations for the BinaryIO class which
+    deals with writing binary into output files and reading binary from input
+    files.
+
+Data Structures/ADT:
+    I've used stacks, priority queues, vectors and binary trees in this program.
+    I used a min-priority queue to create the order of the binary tree, which I
+    used to store the information for the HuffmanTree. I used a stack in my
+    serialize tree function. I used a vector as the basis for my priority queue.
+
+
+Testing:
+    I heavily used diff testing to check whether my encoder and decoder function
+    were working right and checked my output files against both the encoded and 
+    decoded text files from the reference program (the_zap) and with the
+    original text files I used to create encoded text files.
+
+Part that you found most difficult:
+    I found that the most difficult part was writing the recursive traversal
+    function because small bugs were hard to find and it took a long time to
+    complete.
+
+Time Spent:
+    12 hours
